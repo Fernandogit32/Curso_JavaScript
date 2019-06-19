@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ver nacionalidade</title>
+</head>
+<body>
+
+    Qual seu pais?<input type="text" id="nation">
+    <input type="button" value="Verificar" id="verificar">
+    <div id="result">Resultado</div>
+    <script>
+        var btncheck = window.document.querySelector('input#verificar')
+        btncheck.addEventListener('click', check_nation)
+        function check_nation(){
+            var nation = window.document.querySelector('input#nation')
+            var resultado = window.document.querySelector('div#result')
+            if(nation.value=='Brasil'){
+               
+                resultado.innerHTML = 'Você é <strong>Brasileiro</strong>'
+            }else{
+                resultado.innerHTML = 'Você é <strong>estrangeiro</strong>'
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
