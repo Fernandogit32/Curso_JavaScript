@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modelo de exercícios</title>
+    <title>Ex17 Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            testando...
+            <label for="numero">Tabuada do</label><input type="number" id="numero">
+            <input type="button" value="Gerar tabuada" id="gerar" onclick="gerar()">
         </div>
-        <div>
-            Olá!
+        <div id="result">
+           <select name="tabuada" id="seltab" size="10">
+               <option>Digite um numero acima</option>
+           </select>
         </div>
     </section>
     <footer>
