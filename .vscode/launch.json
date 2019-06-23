@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/aula14/test.js"
+            "program": "${workspaceFolder}/aula16/funcao05.js"
         }
     ]
 }
